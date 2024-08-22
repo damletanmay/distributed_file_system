@@ -1,0 +1,73 @@
+# -ve test cases
+ufile 1.x ~/smain/cd/sf
+ufile asp_project/1.txt ~/smain/td1
+ufile 1.c ~/smain/td/td2/f2
+
+# +ve test cases
+ufile files/1.txt ~/smain/td
+ufile files/2.txt ~/smain/td
+ufile files/1.c ~/smain/td/td2/f2
+ufile files/1.pdf ~/smain/cd/sf
+ufile files/2.pdf ~/smain/cd/sf
+ufile files/test.pdf ~/smain/td1
+
+ufile files/1.txt ~/smain/
+ufile files/2.txt ~/smain/
+ufile files/1.c ~/smain/
+ufile files/1.pdf ~/smain/
+ufile files/2.pdf ~/smain/
+ufile files/test.pdf ~/smain/
+
+# -ve test cases
+dfile ~/smain/td/td2/1.pdf
+dfile ~/smain/td/td2/1.txt
+dfile ~/smain/td/td2/f2/111.c
+dfile ~/smain/all_processes/f1.txt
+
+# +ve test cases
+dfile ~/smain/td/td2/f2/1.c
+dfile ~/smain/td/1.txt
+dfile ~/smain/td/2.txt
+dfile ~/smain/cd/sf/1.pdf
+dfile ~/smain/cd/sf/2.pdf
+dfile ~/smain/td1/test.pdf
+
+dfile ~/smain/1.c
+dfile ~/smain/1.txt
+dfile ~/smain/2.txt
+dfile ~/smain/2.pdf
+dfile ~/smain/1.pdf
+dfile  ~/smain/test.pdf
+
+# -ve test cases
+rmfile ~/smain/td/td2/1.pdf
+rmfile ~/smain/td/td2/1.txt
+rmfile ~/smain/td/td2/f2/111.c
+rmfile ~/smain/all_processes/f1.txt
+
+# +ve test cases
+rmfile ~/smain/td/td2/f2/1.c
+rmfile ~/smain/td/1.txt
+rmfile ~/smain/cd/sf/2.pdf
+rmfile ~/smain/cd/sf/1.pdf
+rmfile ~/smain/td1/test.pdf
+
+rmfile ~/smain/1.c
+rmfile ~/smain/1.txt
+rmfile ~/smain/2.pdf
+rmfile ~/smain/1.pdf
+rmfile ~/smain/test.pdf
+
+# -ve test cases
+dtar .x
+dtar .was
+dtar .asdasdasdasdtxt
+
+# +ve test cases
+dtar .c
+dtar .pdf
+dtar .txt
+
+
+display ~/smain/
+display ~/smain/ta
