@@ -10,6 +10,7 @@ Distributed File System is a project designed to manage and distribute files acr
 * Transparent to Users: From the user’s perspective, the system behaves as if it is interacting with a single server, while in reality, files are stored and managed across multiple servers.
 This project demonstrates the principles of distributed systems, networking, and file management, ensuring scalability and efficient handling of different file types across multiple servers.
 
+# [Video Explaination](https://drive.google.com/file/d/1q_pLQ6aFv5e-GQcxlwN9mvJoN9OTroeo/view?usp=sharing)
 
 ## System Design
 
